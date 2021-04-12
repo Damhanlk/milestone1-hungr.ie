@@ -1,1 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&family=Poppins:wght@100;200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --blue: #1446A0;
+    --white: #ffffff;
+    --dark: #3C3C3B;
+    --grey: #EBEBD3;
+    --pink: #DB3069;
+    --ultra-red: #ED6B86;
+    --yellow: #F5D547;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+body .navbar-nav {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+    background-color: var(--blue) !important;
+    padding-bottom: 0;
+    padding-top: 0;
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: var(--yellow) !important;
+}
+
+#logo-navbar {
+    height: 75px;
+    width: 225px;
+}

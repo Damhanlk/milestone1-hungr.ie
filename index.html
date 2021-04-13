@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&family=Poppins:wght@100;200;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&family=Lora:wght@400;500;700&family=Poppins:wght@100;200;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
@@ -23,7 +22,7 @@
 </head>
 
 <body>
-
+    <!------------ Navbar ------------>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/Hungr.ie.png" id="logo-navbar" alt="hungr.ie logo"></a>
@@ -37,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active data-toggle=" collapse" data-target=".navbar-collapse.show">
-                    <a class="nav-link mr-2" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link mr-2" href="#header-about">Home <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item data-toggle=" collapse" data-target=".navbar-collapse.show">
@@ -53,23 +52,21 @@
         </div>
     </nav>
 
-    <!-- ---------- Header Image ---------- -->
+    <!-- ---------- Header Image and Text ---------- -->
     <header>
         <div class="container-fluid" id="header-about">
             <img src="/assets/images/dublin-skyline.jpeg" id="header-image">
-            <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="row h-100 align-items-center text-center justify-content-center">
                 <div class="col-12">
-                    <img id="main-logo" src="assets/images/Hungr.ie.png">
-                    <!-- <h1 id="opening-text"><img id="main-logo" src="assets/images/Hungr.ie.png"></h1> -->
-                    <div class="col-12 mw-100">
-                        <p id="opening-description">Established in 2021, Hungr.ie is Dublin's homepage for all things
-                            foodie in the capital. Weekly events, featured chefs and mouth-watering photos from some of
-                            Ireland's best restaurants.</p>
-                    </div>
-
+                    <h1 id="opening-title">HUNGR.IE</h1>
+                    <h2 id="opening-description">What Dublin Eats</h2>
                 </div>
             </div>
     </header>
+
+
+
+
 
     <!-- Jquery bootstrap and popper js scripts added for additional functionality -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

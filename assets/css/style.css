@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&family=Poppins:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&family=Lora:wght@400;500;700&family=Poppins:wght@100;200;400&display=swap');
 
 * {
     margin: 0;
@@ -18,7 +18,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -27,11 +27,31 @@ body .navbar-nav {
     font-weight: 400;
 }
 
+/* ---------- Text ---------- */
 
+#opening-title {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 100;
+    color: #fff;
+    padding-top: 200px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, .8);
+}
+
+#opening-description {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 100;
+    padding-top: 10px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, .8);
+}
 
 /* ---------- Navbar ---------- */
 
 .navbar {
+    width: 100vw;
     background-color: var(--blue) !important;
     padding-bottom: 0;
     padding-top: 0;
@@ -46,6 +66,8 @@ body .navbar-nav {
 
 .nav-link {
     color: #fff !important;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
 }
 
 .nav-link:hover {
@@ -64,8 +86,8 @@ body .navbar-nav {
 #header-image {
     filter: brightness(40%);
     position: absolute;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -74,10 +96,9 @@ body .navbar-nav {
     right: 0;
     bottom: 0;
     left: 0;
-    overflow: hidden;
     display: flex;
     animation-name: hero-zoom;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
     background-repeat: no-repeat, center;
 }
@@ -94,10 +115,18 @@ body .navbar-nav {
 
 #header-about {
     align-items: center;
+    text-align: center;
+    color: #fff;
 }
 
-#main-logo {
-    height: 30vh;
-    width: 30vw;
-    padding-top: 100px;
+
+/* ---------- Events section ---------- */
+
+#events-section {
+    background-color: #fff;
+    color: var(--blue);
+    margin: 0;
+    text-align: center;
+    min-height: 150px;
+    padding: 200px;
 }

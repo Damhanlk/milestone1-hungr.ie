@@ -14,6 +14,7 @@
     --pink: #DB3069;
     --ultra-red: #ED6B86;
     --yellow: #F5D547;
+    --lightblue: #48B8D0;
 }
 
 body {
@@ -31,15 +32,16 @@ body .navbar-nav {
 
 #opening-title {
     text-align: center;
+    font-weight: 400;
+    color: #ffffff;
     font-size: 100px;
-    font-weight: 100;
-    color: #fff;
-    padding-top: 200px;
+    z-index: 1;
+    padding-top: 150px;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, .8);
 }
 
 #opening-description {
-    color: #fff;
+    color: #ffffff;
     font-size: 35px;
     text-align: center;
     justify-content: center;
@@ -51,10 +53,8 @@ body .navbar-nav {
 /* ---------- Navbar ---------- */
 
 .navbar {
-    width: 100vw;
+    width: 100%;
     background-color: var(--blue) !important;
-    padding-bottom: 0;
-    padding-top: 0;
     z-index: 2;
     text-align: center;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
@@ -66,28 +66,35 @@ body .navbar-nav {
 
 .nav-link {
     color: #fff !important;
-    font-weight: 200;
+    font-weight: 400;
     font-family: "Poppins", sans-serif;
+    padding-right: 20px;
 }
 
+
+/* --------------- important tag here to override bootstrap and transition added */
 .nav-link:hover {
-    color: var(--yellow) !important;
+    color: var(--ultra-red) !important;
+    transition: 0.8s;
 }
 
 #logo-navbar {
-    height: 75px;
+    height: 85px;
     width: 225px;
 }
 
 
-/* ---------- Header Image ---------- */
+/* ------------------------------ Header Image ---------------------------- */
 
 
-#header-image {
-    filter: brightness(40%);
-    position: absolute;
-    width: 100vw;
-    height: 100%;
+.header-about {
+    background: url("../images/dublin-skyline.jpeg") no-repeat center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -97,10 +104,11 @@ body .navbar-nav {
     bottom: 0;
     left: 0;
     display: flex;
+    overflow: hidden;
     animation-name: hero-zoom;
     animation-duration: 10s;
     animation-fill-mode: forwards;
-    background-repeat: no-repeat, center;
+
 }
 
 @keyframes hero-zoom {
@@ -109,24 +117,19 @@ body .navbar-nav {
     }
 
     to {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 
-#header-about {
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
 
+/* ------------------------------- Events section -------------------------- */
 
-/* ---------- Events section ---------- */
-
-#events-section {
-    background-color: #fff;
+.events-section-container {
+    background: #fff;
+    position: relative;
     color: var(--blue);
     margin: 0;
     text-align: center;
-    min-height: 150px;
-    padding: 200px;
+    padding: 200px 40px;
+    min-height: 400px;
 }

@@ -108,7 +108,6 @@ body .navbar-nav {
     animation-name: hero-zoom;
     animation-duration: 10s;
     animation-fill-mode: forwards;
-
 }
 
 @keyframes hero-zoom {
@@ -153,6 +152,29 @@ body .navbar-nav {
     color: var(--blue);
 }
 
+.thank-you-text {
+    background: url("../images/dublin-skyline.jpeg") no-repeat center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    animation-name: hero-zoom;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
 /* ------------------------------- Events section -------------------------- */
 
 .events-section-container {
@@ -190,3 +212,51 @@ body .navbar-nav {
 }
 
 /* -------------------- Featured Section -------------- */
+
+
+
+
+/* ---------------Footer Section---------------- */
+.footer-section-container {
+    background: var(--white);
+    padding: 0;
+    position: relative;
+    color: var(--blue);
+    margin: 0;
+    width: 100%;
+    min-height: 350px;
+}
+
+#contact-us-list {
+    color: var(--blue);
+    font-size: 16px;
+    padding: 5px;
+}
+
+.map-text {
+    font-size: 16px;
+    color: var(--blue);
+}
+
+.social-networks li a i {
+    color: var(--blue);
+    display: inline;
+    padding-top: 20px;
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 15px;
+    padding-top: 20px;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.social-networks li a i:hover {
+    color: #fff;
+    background: var(--blue);
+}

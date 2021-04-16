@@ -12,7 +12,7 @@ The idea behind the project comes from a personal interest in food and what a us
 
 
 
-A deployed link to the website can be found HERE ////////
+A deployed link to the website can be found HERE https://damhanlk.github.io/hungrie-milestone1/
 
 ## UX
 
@@ -54,7 +54,9 @@ Following there, the user is greeted with 2 photos of a chef and a dish side by 
 
 The footer contains social icons hyperlinked to bring users to the facebook, instagram and twitter homepages respectively.
 
-Skeleton - Wireframes
+## Skeleton - Wireframes
+
+See in images section for original vs updated wireframe 
 
 ## Features
 
@@ -79,6 +81,24 @@ Testing usually went as follows:
 Hard refresh using shift, ensure navbar worked, collapsed and expanded.
 
 ## Deployment
+
+In my account GitHub website, I selected Repositories
+
+I selected Hungrie-milestone1 from the GitHub Dashboard.
+
+I navigated to Settings and to the GitHub Pages section.
+
+From the Source section, I clicked on the drop-down menu and selected Master Branch.
+
+Once Master Branch is selected, the page has been automatically refreshed, with a detailed ribbon display GitHub Source Saved Pages indicating the successful implementation.
+
+I then decided to use a custom URL, so created a CNAME file with the URL www.travellingtainer.com as the domain, unfortunately there was an issue with the DNS settings and so this feature is one I intend on implementing in the near future.
+
+The live link can be found here - https://damhanlk.github.io/hungrie-milestone1/
+
+To run locally, you can clone this repository directly in your favorite editor, by typing in the terminal the following command:
+
+git clone https://github.com/Damhanlk/hungrie-milestone1.git
 
 How to run this project locally
 
@@ -108,8 +128,17 @@ I removed the hero-zoom on the hero image as it made the site quite slow.
 
 ## Testing
 
-HMTL5 CSS3 Bootstrap v4.5.3 Google chrome dev tools - debugging query - for use of modal with bootstrap
+HMTL5 CSS3 Bootstrap v4.5.3 Google chrome dev tools - debugging query - for use of modal with bootstrap.
 
+The website was tested both after the creation of each section separately but also after its completion. I tested all the functionality in the main browsers that ran on several operating systems: Chrome, Firefox, Safari, Windows 10, Mac OSX 10.14, and Android operating systems.
+
+Testing during section construction was done primarily with Chrome DevTools, making sure each element works correctly and optimally, including responsiveness across devices. For navbar, I tested the functionality of all links, including the site brand. I also tested the color change of links to hover and toggle and collapse functioning in small devices.
+
+During testing, I realised the Landing Text was causing responsiveness issues, which was easily fixed by inserting display:none; into the CSS of this heading.
+
+I conducted several user tests to ensure there was an ease of use with this site, and all users reported the site was well functioning and user friendly. No users reported the Dog-Icon Navbar as an issue
+
+When User stories are taken into account, testing ensured that ingormation was clearly visible and the site was easily navigable to new and returning users. Subscribing to the newsletter was straightforward, however I would have preferred more functionality there. 
 ## Credits
 
 All of the images used on this site were taken from https://unsplash.com/

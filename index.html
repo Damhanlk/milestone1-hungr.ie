@@ -44,10 +44,10 @@
                         <a class="nav-link mr-2" href="#events">Events</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a class="nav-link mr-2" href="featured.html">Featured</a>
+                        <a class="nav-link mr-2" href="#featured">Featured</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        <a class="nav-link" href="gallery.html" target="_blank">Gallery</a>
                     </li>
                 </ul>
             </div>
@@ -123,49 +123,76 @@
 
         </section>
         <!----------------- featured section -------------->
-        <section class=" container-fluid featured-container mw-100">
+        <section class=" container-fluid featured-container mw-100" id="featured">
             <div class="text-center" id=featured-title>
                 <h2>Featured</h2>
             </div>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-
+                <div class="row align-items-center">
+                    <div class=" col-md-3 col-sm-12">
+                        <div>
+                            <img src="assets/images/pasta-recipe.jpg" alt="image of a plate of pasta" class="img-fluid"
+                                id="featured-image">
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-12 text center justify-content-center">
+                        <h2>Summer Pesto Pasta</h2>
+                        <p>This one is so easy! Add basil, toasted pine nuts, parmesan, olive oil to a food processor.
+                            Blitz
+                            for 20 seconds.</p>
+                        <br>
+                        <p>Meanwhile, boil some of your favourite pasta, we used farfalle</p>
+                        <br>
+                        <p> Stir in your fresh pesto. Add cherry tomatoes and serve hot or cold with extra parmesan!</p>
+                    </div>
+                    <div class=" col-md-3 col-sm-12">
+                        <div>
+                            <img src="assets/images/chef-pic.jpg" alt="image of a plate of pasta" class="img-fluid"
+                                id="featured-image">
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-12 text center justify-content-center">
+                        <h2>James Dobson</h2>
+                        <p>This week's featured chef is James from Castleknock. Soon to be head chef in Clanbrassil
+                            house, James has worked in restaurants in London and Dublin. </p>
+                        <br>
+                        <p>Favourite dish: Prawn Linguine</p>
+                        <br>
+                        <p> Be sure to pop in and see what he has planned for the menu this summer!</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
+    <section>
 
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-4 text-center">
-                <ul id="contact-us-list">
-                    <li>Telephone: 0871234567</li>
-                    <li>Email: contactus@hungr.ie</li>
-                    <li> Address: 11 George's Street Lower, Dún Laoghaire, Dublin</li>
-                </ul>
-            </div>
-            <div class="col-sm-12 col-md-4 text-center">
-                <h4 class="map-text">Find us in Dublin!</h4>
-                <iframe id=" map" src="https://bit.ly/2QVfkiy"></iframe>
-            </div>
-            <div class="col-sm-12 col-md-4 text-center">
-                <ul class="social-networks list-inline">
-                    <li class="list-inline-item"><a href="https://facebook.com" target="_blank"><i
-                                class="fab fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com" target="_blank"><i
-                                class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://instagram.com" target="_blank"><i
-                                class="fab fa-instagram"></i></a></li>
-            </div>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 text-center">
+                    <ul id="contact-us-list">
+                        <li>Telephone: 0871234567</li>
+                        <li>Email: contactus@hungr.ie</li>
+                        <li> Address: 11 George's Street Lower, Dún Laoghaire, Dublin</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <h4 class="map-text">Find us in Dublin!</h4>
+                    <iframe id=" map" src="https://bit.ly/2QVfkiy"></iframe>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <ul class="social-networks list-inline">
+                        <li class="list-inline-item"><a href="https://facebook.com" target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com" target="_blank"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://instagram.com" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                </div>
 
-    </footer>
+        </footer>
+    </section>
 
     <!-- Modal -->
     <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModal"

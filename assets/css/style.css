@@ -6,6 +6,10 @@
     border: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --blue: #1446A0;
     --white: #ffffff;
@@ -184,7 +188,7 @@ body .navbar-nav {
     color: var(--blue);
     margin: 0;
     width: 100%;
-    min-height: 350px;
+    min-height: 50vh;
 }
 
 #events-title {
@@ -213,29 +217,52 @@ body .navbar-nav {
 
 /* -------------------- Featured Section -------------- */
 
+#featured {
+    background-color: var(--blue);
+    color: #fff;
+    min-height: 50vh;
+    width: 100%;
+}
+
+#featured-image {
+    width: 100%;
+    height: 25vh;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+#featured-title {
+    padding-top: 20px;
+}
 
 
 
 /* ---------------Footer Section---------------- */
 .footer-section-container {
     background: var(--white);
-    padding: 0;
+    padding-top: 10px;
     position: relative;
     color: var(--blue);
     margin: 0;
     width: 100%;
-    min-height: 350px;
+    min-height: 200px;
+    text-align: center;
 }
 
 #contact-us-list {
     color: var(--blue);
     font-size: 16px;
-    padding: 5px;
+    padding-top: 45px;
 }
 
 .map-text {
+    padding-top: 50px;
     font-size: 16px;
     color: var(--blue);
+}
+
+.social-networks {
+    padding-top: 70px;
 }
 
 .social-networks li a i {
@@ -249,7 +276,6 @@ body .navbar-nav {
     width: 50px;
     border-radius: 50%;
     padding: 15px;
-    padding-top: 20px;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -260,3 +286,13 @@ body .navbar-nav {
     color: #fff;
     background: var(--blue);
 }
+
+.gallery-pic {
+    width: 100%;
+    height: 33vh;
+    object-fit: cover;
+}
+
+/* Media queries */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}

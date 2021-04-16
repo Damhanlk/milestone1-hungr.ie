@@ -36,17 +36,17 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active data-toggle=" collapse" data-target=".navbar-collapse.show">
+                    <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="nav-link mr-2" href="#header-about">Home</a>
                     </li>
 
-                    <li class="nav-item data-toggle=" collapse" data-target=".navbar-collapse.show">
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="nav-link mr-2" href="#events">Events</a>
                     </li>
-                    <li class="nav-item data-toggle=" collapse" data-target=".navbar-collapse.show">
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="nav-link mr-2" href="featured.html">Featured</a>
                     </li>
-                    <li class="nav-item data-toggle=" collapse" data-target=".navbar-collapse.show">
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                 </ul>
@@ -58,26 +58,29 @@
                     <div class=" container col-xs-12">
                         <h1 id="opening-title">HUNGR.IE</h1>
                         <h2 id="opening-description">What Dublin Eats</h2>
-                        <button class="btn btn-light px-5 py-2 primary-btn" id="newsletter-button">
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-light px-5 py-2 primary-btn" data-toggle="modal"
+                            data-target="#newsletterModal" id="newsletter-button">
                             Sign Up For Our Newsletter! </button>
+
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </header>
 
     <main>
         <section class=" container-fluid events-section-container mw-100" id="events">
             <div class="text-center" id="events-title">
-                <h1>Events</h1>
+                <h2>Events</h2>
             </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <img src="assets/images/mexican meal.jpg" class="card-img-top img-fluid">
+                                <img src="assets/images/mexican-meal.jpg" alt="mexican meal image"
+                                    class="card-img-top img-fluid">
                                 <h5 class="card-title">Maragarita Mondays</h5>
                                 <p class="card-text">Every Monday is Margarita Monday at 777. Two for one on everyone's
                                     favourite cocktail.
@@ -89,11 +92,11 @@
                     <div class="col-sm-12 col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <img src="assets/images/Italian meal.jpg" class="card-img-top img-fluid">
+                                <img src="assets/images/Italian-meal.jpg" alt="italian meal image"
+                                    class="card-img-top img-fluid">
                                 <h5 class="card-title">When in Rome</h5>
                                 <p class="card-text">Dinner for two this weekend in Sprezzatura. Includes wine and
-                                    choice
-                                    of dessert.
+                                    choice of starter and dessert.
                                 </p>
                                 <a href="https://www.sprezzatura.ie/" target="_blank" class="btn btn-outline-primary"
                                     id="restaurant-link">Visit
@@ -104,7 +107,8 @@
                     <div class="col-sm-12 col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <img src="assets/images/brunch meal.jpg" class="card-img-top img-fluid">
+                                <img src="assets/images/brunch-meal.jpg" alt="brunch meal image"
+                                    class="card-img-top img-fluid">
                                 <h5 class="card-title">Brunch Munch</h5>
                                 <p class="card-text">All you can eat (and drink!) brunch with a view of the city at
                                     Sophie's Rooftop Restaurant.
@@ -119,6 +123,37 @@
 
         </section>
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Enter Details Below</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" id="clickbutton">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="newsletter-form">
+                        Your Name
+                        <input type="text" name="name" id="yourphone" class="form-control" required />
+                    </div>
+                    <div class=" newsletter-form">
+                        Your Email
+                        <input type="email" name="name" id="youremail" class="form-control" required />
+                    </div>
+                </div>
+                <div class=" modal-footer">
+                    <button type="button" class="btn btn-primary" id="newsletter-close-button"
+                        data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="newsletter-submit-button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 

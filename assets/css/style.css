@@ -131,6 +131,27 @@ body .navbar-nav {
     color: #fff;
 }
 
+/* ------------------ Newsletter Modal ------------------------------- */
+
+#newsletter-close-button {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+#newsletter-close-button:hover {
+    background-color: #fff;
+    color: var(--blue);
+}
+
+#newsletter-submit-button {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+#newsletter-submit-button:hover {
+    background-color: #fff;
+    color: var(--blue);
+}
 
 /* ------------------------------- Events section -------------------------- */
 

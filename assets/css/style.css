@@ -161,7 +161,7 @@ body .navbar-nav {
     position: relative;
     color: var(--blue);
     margin: 0;
-    width: 100vw;
+    width: 100%;
     min-height: 350px;
 }
 
@@ -188,3 +188,5 @@ body .navbar-nav {
     background-color: var(--blue);
     color: #fff;
 }
+
+/* -------------------- Featured Section -------------- */

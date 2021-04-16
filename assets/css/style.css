@@ -109,19 +109,6 @@ body .navbar-nav {
     left: 0;
     display: flex;
     overflow: hidden;
-    animation-name: hero-zoom;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.05);
-    }
 }
 
 #newsletter-button {
@@ -174,9 +161,7 @@ body .navbar-nav {
     left: 0;
     display: flex;
     overflow: hidden;
-    animation-name: hero-zoom;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
+
 }
 
 /* ------------------------------- Events section -------------------------- */
